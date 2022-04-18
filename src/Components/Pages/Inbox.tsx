@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import {
   Button,
   Col,
-  Divider,
   Drawer,
   Input,
   Layout,
@@ -11,7 +10,6 @@ import {
   Space,
   Typography,
 } from "antd";
-// import "../../styles/dashboard.less";
 import Navbar from "../Common/Navbar";
 import { useSideNavState } from "../Common/LayoutContainer";
 import {
@@ -87,8 +85,6 @@ const Inbox = () => {
     setFilterCount(counter);
   }, []);
 
-  console.log("current state", collapsed, visible);
-
   return (
     <>
       <Navbar title="Inbox" style={{ backgroundColor: "#F8F9FE" }}>
@@ -120,186 +116,178 @@ const Inbox = () => {
         }}
         className="sidenav"
       >
-        <Drawer
-          placement="left"
-          onClose={() => setVisible(!visible)}
-          visible={visible}
-          key="left"
-          zIndex={0}
-          closable={false}
-          mask={false}
-          contentWrapperStyle={{ boxShadow: "none" }}
-          width={collapsed ? 318 : 420}
-          drawerStyle={{
-            backgroundColor: "#f8f9fe",
-            // collapsed
-            // backgroundColor: "red",
-            paddingTop: 50,
-            paddingLeft: collapsed ? 0 : 120,
-          }}
-        >
-          <Space
-            direction="vertical"
-            size="small"
-            style={{ minWidth: 270, paddingLeft: 70 }}
-          >
-            <Input
-              placeholder="Search"
-              prefix={<SearchOutlined style={{ color: "grey" }} />}
-            />
-            <Menu
-              defaultSelectedKeys={["1"]}
-              defaultOpenKeys={["sub1"]}
-              theme="light"
-              style={{ backgroundColor: "#f8f9fe" }}
-            >
-              <Menu.Item
-                className="slider-item"
-                key="1"
-                onClick={() => setInboxData(messageData)}
-              >
-                <span>All ({messageData.length})</span>
-              </Menu.Item>
-              <Menu.Item
-                className="slider-item"
-                key="2"
-                onClick={() => filterInboxData("Starred")}
-              >
-                Starred ({filterCount.Starred})
-              </Menu.Item>
-              <Menu.Item
-                className="slider-item"
-                key="3"
-                onClick={() => filterInboxData("Important")}
-              >
-                Important ({filterCount.Important})
-              </Menu.Item>
-              <Menu.Item
-                className="slider-item"
-                key="4"
-                onClick={() => filterInboxData("Events")}
-              >
-                Events ({filterCount.Events})
-              </Menu.Item>
-              <Menu.Item
-                className="slider-item"
-                key="5"
-                onClick={() => filterInboxData("Spam")}
-              >
-                Spam ({filterCount.Spam})
-              </Menu.Item>
-              <Menu.Item
-                className="slider-item"
-                key="6"
-                style={{ marginTop: 35 }}
-                onClick={() => filterInboxData("Trash")}
-              >
-                Trash ({!filterCount.Trash ? 0 : filterCount.Trash})
-              </Menu.Item>
-            </Menu>
-            <div
-              style={{
-                width: 180,
-                backgroundColor: "#999",
-                height: 1,
-                position: "absolute",
-                bottom: 300,
-              }}
-            />
-          </Space>
-        </Drawer>
-        <Layout>
-          <Content
-            className="inbox-contain"
-            style={{
-              paddingLeft: visible ? 280 : 20,
-              paddingRight: detailView ? 670 : 20,
-              transition: "300ms",
-            }}
-          >
-            <SplitPane
-              split="vertical"
-              defaultSize={450}
-              primary="first"
-              pane1Style={{
-                overflow: "auto",
-                minWidth: `${!detailView ? "100%" : "30%"}`,
-              }}
-              pane2Style={{
-                paddingTop: 60,
-              }}
-              style={{
-                // paddingLeft: visible && collapsed ? 420 : 220,
-                // paddingLeft: visible ? 420 : collapsed ? : 220,
-                // paddingLeft: visible && collapsed ? 420 : 220,
-                // paddingLeft: collapsed ? 90 : visible ? 420 : collapsed && visible ? 520 : 100,
-                transition: "200ms",
+        <Row>
+          <Col flex={visible ? "200px" : "0px"}>
+            <Drawer
+              placement="left"
+              onClose={() => setVisible(!visible)}
+              visible={visible}
+              key="left"
+              zIndex={0}
+              closable={false}
+              mask={false}
+              contentWrapperStyle={{ boxShadow: "none" }}
+              width={collapsed ? 290 : 420}
+              drawerStyle={{
+                backgroundColor: "#f8f9fe",
+                paddingTop: 50,
+                paddingLeft: collapsed ? 70 : 200,
               }}
             >
-              <div style={{ paddingTop: 70 }}>
-                <div style={{ marginLeft: 20, marginBottom: 20 }}>
-                  <Text>
-                    Showing {inboxData.length} of {messageData.length} results
-                  </Text>
-                </div>
-                {inboxData.map((item: any, index) => {
-                  return (
-                    <MessageCard
-                      style={{ paddingRight: 20, marginLeft: 20 }}
-                      key={item.id}
-                      className={`${
-                        id === index ? "msg-card-selected" : "msg-card"
-                      }`}
-                      messageCardVisible={detailView}
-                      clickHandler={() => {
-                        setId(index);
-                        toggleDetailView(item);
-                      }}
-                      data={item}
-                    />
-                  );
-                })}
-              </div>
-              <div style={{ paddingRight: 20, paddingLeft: 20 }}>
-                <ExceptionOutlined
+              <Space
+                direction="vertical"
+                size="small"
+                style={{ minWidth: 270 }}
+              >
+                <Input
+                  placeholder="Search"
+                  prefix={<SearchOutlined style={{ color: "grey" }} />}
+                  style={{ width: 180 }}
+                />
+                <Menu
+                  defaultSelectedKeys={["1"]}
+                  defaultOpenKeys={["sub1"]}
+                  theme="light"
+                  style={{ backgroundColor: "#f8f9fe" }}
+                >
+                  <Menu.Item
+                    className="slider-item"
+                    key="1"
+                    onClick={() => setInboxData(messageData)}
+                  >
+                    <span>All ({messageData.length})</span>
+                  </Menu.Item>
+                  <Menu.Item
+                    className="slider-item"
+                    key="2"
+                    onClick={() => filterInboxData("Starred")}
+                  >
+                    Starred ({filterCount.Starred})
+                  </Menu.Item>
+                  <Menu.Item
+                    className="slider-item"
+                    key="3"
+                    onClick={() => filterInboxData("Important")}
+                  >
+                    Important ({filterCount.Important})
+                  </Menu.Item>
+                  <Menu.Item
+                    className="slider-item"
+                    key="4"
+                    onClick={() => filterInboxData("Events")}
+                  >
+                    Events ({filterCount.Events})
+                  </Menu.Item>
+                  <Menu.Item
+                    className="slider-item"
+                    key="5"
+                    onClick={() => filterInboxData("Spam")}
+                  >
+                    Spam ({filterCount.Spam})
+                  </Menu.Item>
+                  <Menu.Item
+                    className="slider-item"
+                    key="6"
+                    style={{ marginTop: 35 }}
+                    onClick={() => filterInboxData("Trash")}
+                  >
+                    Trash ({!filterCount.Trash ? 0 : filterCount.Trash})
+                  </Menu.Item>
+                </Menu>
+                <div
                   style={{
-                    fontSize: 20,
-                    color: "grey",
-                    padding: 8,
-                    marginRight: 10,
-                    backgroundColor: "#ECF0FB",
-                    borderRadius: 5,
+                    width: 180,
+                    backgroundColor: "#999",
+                    height: 1,
+                    position: "absolute",
+                    bottom: 300,
                   }}
                 />
-                <Text style={{ marginLeft: 10, fontSize: 24 }}>
-                  {cardData.title === "" ? "No title" : cardData.title}
-                </Text>
-                <Row
-                  justify="space-between"
-                  style={{ marginTop: 20, marginBottom: 20 }}
+              </Space>
+            </Drawer>
+          </Col>
+          <Col flex="auto">
+            <Layout>
+              <Content
+                className="inbox-contain"
+                style={{ transition: "300ms", paddingTop: 70 }}
+              >
+                <SplitPane
+                  split="vertical"
+                  defaultSize={450}
+                  primary="first"
+                  pane1Style={{
+                    overflow: "auto",
+                    minWidth: `${!detailView ? "100%" : "30%"}`,
+                    paddingInline: 20,
+                  }}
+                  pane2Style={{
+                    paddingTop: 20,
+                    paddingInline: 20,
+                  }}
                 >
-                  <Col style={{ paddingTop: 40 }}>
-                    {cardData.description.to}
-                  </Col>
-                  <Col>
-                    <Button
+                  <>
+                    <Title level={5}>
+                      Showing {inboxData.length} of {messageData.length} results
+                    </Title>
+                    {inboxData.map((item: any, index) => (
+                      <MessageCard
+                        style={{ marginInline: 20, padding: 14 }}
+                        key={item.id}
+                        className={`${
+                          id === index ? "msg-card-selected" : "msg-card"
+                        }`}
+                        messageCardVisible={detailView}
+                        clickHandler={() => {
+                          setId(index);
+                          toggleDetailView(item);
+                        }}
+                        data={item}
+                      />
+                    ))}
+                  </>
+                  <>
+                    <ExceptionOutlined
                       style={{
-                        color: "#fff",
-                        backgroundColor: "#4cab61",
-                        border: "none",
+                        fontSize: 20,
+                        color: "grey",
+                        padding: 8,
+                        marginRight: 10,
+                        backgroundColor: "#ECF0FB",
+                        borderRadius: 5,
                       }}
+                    />
+                    <Text style={{ marginLeft: 10, fontSize: 24 }}>
+                      {cardData.title === "" ? "No title" : cardData.title}
+                    </Text>
+                    <Row
+                      justify="space-between"
+                      style={{ marginTop: 20, marginBottom: 20 }}
                     >
-                      View details
-                    </Button>
-                  </Col>
-                </Row>
-                <Text style={{ paddingTop: 50 }}>
-                  {cardData.description.text}
-                </Text>
-              </div>
-            </SplitPane>
-          </Content>
-        </Layout>
+                      <Col style={{ paddingTop: 40 }}>
+                        {cardData.description.to}
+                      </Col>
+                      <Col>
+                        <Button
+                          style={{
+                            color: "#fff",
+                            backgroundColor: "#4cab61",
+                            border: "none",
+                          }}
+                        >
+                          View details
+                        </Button>
+                      </Col>
+                    </Row>
+                    <Text style={{ paddingTop: 50 }}>
+                      {cardData.description.text}
+                    </Text>
+                  </>
+                </SplitPane>
+              </Content>
+            </Layout>
+          </Col>
+        </Row>
       </Content>
     </>
   );
