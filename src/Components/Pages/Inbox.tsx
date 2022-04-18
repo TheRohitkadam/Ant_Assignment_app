@@ -86,6 +86,9 @@ const Inbox = () => {
     });
     setFilterCount(counter);
   }, []);
+
+  console.log("current state", collapsed, visible);
+
   return (
     <>
       <Navbar title="Inbox" style={{ backgroundColor: "#F8F9FE" }}>
@@ -126,10 +129,13 @@ const Inbox = () => {
           closable={false}
           mask={false}
           contentWrapperStyle={{ boxShadow: "none" }}
-          width={318}
+          width={collapsed ? 318 : 420}
           drawerStyle={{
             backgroundColor: "#f8f9fe",
+            // collapsed
+            // backgroundColor: "red",
             paddingTop: 50,
+            paddingLeft: collapsed ? 0 : 120,
           }}
         >
           <Space
@@ -185,20 +191,28 @@ const Inbox = () => {
               <Menu.Item
                 className="slider-item"
                 key="6"
-                style={{marginTop: 35}}
+                style={{ marginTop: 35 }}
                 onClick={() => filterInboxData("Trash")}
               >
                 Trash ({!filterCount.Trash ? 0 : filterCount.Trash})
               </Menu.Item>
             </Menu>
-            <div style={{ width: 180, backgroundColor: "#999", height: 1, position: "absolute", bottom: 300  }} />
+            <div
+              style={{
+                width: 180,
+                backgroundColor: "#999",
+                height: 1,
+                position: "absolute",
+                bottom: 300,
+              }}
+            />
           </Space>
         </Drawer>
         <Layout>
           <Content
             className="inbox-contain"
             style={{
-              paddingLeft: visible ? 180 : 20,
+              paddingLeft: visible ? 280 : 20,
               paddingRight: detailView ? 670 : 20,
               transition: "300ms",
             }}
@@ -215,11 +229,14 @@ const Inbox = () => {
                 paddingTop: 60,
               }}
               style={{
-                paddingLeft: visible ? 300 : 80,
+                // paddingLeft: visible && collapsed ? 420 : 220,
+                // paddingLeft: visible ? 420 : collapsed ? : 220,
+                // paddingLeft: visible && collapsed ? 420 : 220,
+                // paddingLeft: collapsed ? 90 : visible ? 420 : collapsed && visible ? 520 : 100,
                 transition: "200ms",
               }}
             >
-              <div style={{ paddingTop: 70, paddingLeft: 10 }}>
+              <div style={{ paddingTop: 70 }}>
                 <div style={{ marginLeft: 20, marginBottom: 20 }}>
                   <Text>
                     Showing {inboxData.length} of {messageData.length} results

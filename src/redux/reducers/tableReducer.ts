@@ -27,8 +27,9 @@ function tableReducer(state = initialState, action: Action) {
             return {
                 ...state,
                 users: [...state.users, user],
-                limitedUsers: [...state.limitedUsers, user],
-                renderCount: state.renderCount + 1
+                // limitedUsers: [...state.limitedUsers, user], // <--- BUG
+                renderCount: state.renderCount + 1,
+                usersCount: state.usersCount + 1
             }
         }
         case REMOVE_USER: {
@@ -36,7 +37,8 @@ function tableReducer(state = initialState, action: Action) {
                 ...state,
                 users: state.users.filter(user => !action.payload.includes(user.guid)),
                 limitedUsers: state.limitedUsers.filter(user => !action.payload.includes(user.guid)),
-                renderCount: state.renderCount + 1
+                renderCount: state.renderCount + 1,
+                usersCount: state.usersCount - 1
             }
         }
         case UPDATE_USER: {
@@ -62,7 +64,8 @@ function tableReducer(state = initialState, action: Action) {
                 limitedUsers: state.limitedUsers.filter((user: User) => {
                     return !action.payload.includes(user.guid)
                 }),
-                renderCount: state.renderCount + 1
+                renderCount: state.renderCount + 1,
+                usersCount: state.usersCount - action.payload.length
             }
         }
         case SET_LIMITED_DATA: {

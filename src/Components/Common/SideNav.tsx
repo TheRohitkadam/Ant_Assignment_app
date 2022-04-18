@@ -18,6 +18,8 @@ import data from "../../data/users.json";
 const SideNav = () => {
   const navigate = useNavigate();
   const tableData = useSelector((state: any) => state.tableReducer);
+  const nodeOneRef = React.useRef(null);
+  const nodeTwoRef = React.useRef(null);
 
   return (
     <>

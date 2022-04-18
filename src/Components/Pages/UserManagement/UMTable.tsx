@@ -49,6 +49,8 @@ const UMTable: FC<Props> = ({
 
   useEffect(() => {
     onTableChange({ current: store.current, pageSize: store.pageSize });
+    console.log("store", store.usersCount, store.limitedUsers.length, store.current, store.pageSize);
+    
   }, [store.renderCount]);
 
   const showPropsConfirm = (record: any) =>
