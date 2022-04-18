@@ -76,7 +76,7 @@ const FilterHeader = () => {
         maxTagCount={1}
         >
         {LocationOptions.map((item: any, i) => (
-          <Select.Option value={item}>{item}</Select.Option>
+          <Select.Option key={i.toString()} value={item}>{item}</Select.Option>
           ))}
       </Select>
       <Select

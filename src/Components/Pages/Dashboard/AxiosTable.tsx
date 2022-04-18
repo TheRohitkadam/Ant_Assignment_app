@@ -1,34 +1,34 @@
-import { Avatar, Space, Typography } from 'antd';
-import React, { FC, useEffect, useState } from 'react'
-import AntTable from '../../Common/AntTable';
-import getDataByApi from './getDataByApi';
+import { Avatar, Space, Typography } from "antd";
+import React, { FC, useEffect, useState } from "react";
+import AntTable from "../../Common/AntTable";
+import getDataByApi from "./getDataByApi";
 
-const { Text } = Typography
+const { Text } = Typography;
 
 const AxiosTable: FC = () => {
   const [data, setData] = useState<any[]>([]);
-  const [loading, setLoading] = useState<boolean>(false)
+  const [loading, setLoading] = useState<boolean>(false);
 
   const getData = async (abortController: any) => {
     try {
-      setLoading(true)
+      setLoading(true);
       const response = await getDataByApi(abortController.signal);
-      setData(response.data)
-      setLoading(false)
+      setData(response.data);
+      setLoading(false);
     } catch (error) {
-      console.error(error)
+      console.error(error);
     }
-  }
+  };
 
   useEffect(() => {
-    const abortController = new AbortController
+    const abortController = new AbortController();
 
     getData(abortController);
 
     return () => {
-      abortController.abort()
-    }
-  }, [])
+      abortController.abort();
+    };
+  }, []);
 
   const columns = [
     {
@@ -45,10 +45,7 @@ const AxiosTable: FC = () => {
           >
             {`${name.charAt(0).toUpperCase()}${name.charAt(1).toUpperCase()}`}
           </Avatar>
-          <Text
-            style={{ cursor: "pointer" }}
-            strong
-          >
+          <Text style={{ cursor: "pointer" }} strong>
             {name}
           </Text>
         </Space>
@@ -63,35 +60,37 @@ const AxiosTable: FC = () => {
       title: "Address",
       dataIndex: "address",
       key: "address",
-      render: (address: any, record: any) => `${address.street}, ${address.suite}, ${address.city}, ${address.zipcode}`
+      render: (address: any, record: any) =>
+        `${address.street}, ${address.suite}, ${address.city}, ${address.zipcode}`,
     },
     {
       title: "Phone",
       dataIndex: "phone",
-      key: "phone"
+      key: "phone",
     },
     {
       title: "Website",
       dataIndex: "website",
-      key: "website"
+      key: "website",
     },
     {
       title: "Company",
       dataIndex: "company",
       key: "company",
-      render: (company: any, record: any) => `${company.name}`
-    }
-  ]
+      render: (company: any, record: any) => `${company.name}`,
+    },
+  ];
 
   return (
     <AntTable
       loading={loading}
-      size='small'
+      size="small"
       scroll={{ x: 1200 }}
       columns={columns}
       dataSource={data}
+      rowKey={(record: { id: number }) => record.id}
     />
-  )
-}
+  );
+};
 
-export default AxiosTable
+export default AxiosTable;

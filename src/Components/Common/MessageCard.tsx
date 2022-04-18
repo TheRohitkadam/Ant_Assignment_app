@@ -22,7 +22,6 @@ type MessageProps = {
   messageCardVisible: boolean;
   clickHandler: () => void;
   render?: ReactNode;
-  key: number;
   className?: string;
   style?: CSSProperties;
 };
@@ -42,7 +41,6 @@ const MessageCard = (props: MessageProps) => {
         onClickHandler();
         clickHandler();
       }}
-      key={props.key}
     >
       <Row wrap={false}>
         <Col flex="none">

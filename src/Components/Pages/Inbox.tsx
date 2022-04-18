@@ -182,15 +182,16 @@ const Inbox = () => {
               >
                 Spam ({filterCount.Spam})
               </Menu.Item>
-              <Divider />
               <Menu.Item
                 className="slider-item"
                 key="6"
+                style={{marginTop: 35}}
                 onClick={() => filterInboxData("Trash")}
               >
                 Trash ({!filterCount.Trash ? 0 : filterCount.Trash})
               </Menu.Item>
             </Menu>
+            <div style={{ width: 180, backgroundColor: "#999", height: 1, position: "absolute", bottom: 300  }} />
           </Space>
         </Drawer>
         <Layout>

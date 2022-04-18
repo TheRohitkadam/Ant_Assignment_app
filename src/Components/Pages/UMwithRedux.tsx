@@ -19,7 +19,6 @@ const UMwithRedux = () => {
   const dispatch = useDispatch();
   const tableData = useSelector((state: any) => state.tableReducer);
   const [formData, setFormData] = useState({});
-  // const [viewModal, setViewModal] = useState(false);
   const [modalState, setModalState] = useState<{
     viewForm: boolean;
     modalName: "Add User" | "Edit User";
@@ -27,10 +26,6 @@ const UMwithRedux = () => {
     viewForm: false,
     modalName: "Add User",
   });
-
-  // const callback = useCallback(() => {
-  //   console.log("callback triggered");
-  // }, [tableData.limitedUsers]);
 
   useEffect(() => {
     dispatch(setLimitedData({ current: 1, pageSize: 10 }));
@@ -116,7 +111,6 @@ const UMwithRedux = () => {
             formData={formData}
             setFormData={setFormData}
           />
-          {/* <MemoTable modalState={modalState} toggleForm={toggleForm} /> */}
           <UMformModal
             modalState={modalState}
             toggleForm={toggleForm}
