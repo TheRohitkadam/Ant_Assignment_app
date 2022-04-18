@@ -1,0 +1,18 @@
+[
+  {
+    "type": "Incidents - Open",
+    "value": 20
+  },
+  {
+    "type": "Incidents - Closed",
+    "value": 25
+  },
+  {
+    "type": "Investigation - Open",
+    "value": 16
+  },
+  {
+    "type": "Investigation - Closed",
+    "value": 21
+  }
+]

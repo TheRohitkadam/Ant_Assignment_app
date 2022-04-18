@@ -1,0 +1,1176 @@
+[
+  [
+    {
+      "date": "10/09/2020",
+      "type": "Financial impact",
+      "count": 2180
+    },
+    {
+      "date": "10/09/2020",
+      "type": "Risks violated",
+      "count": 7
+    },
+    {
+      "date": "17/09/2020",
+      "type": "Financial impact",
+      "count": 0
+    },
+    {
+      "date": "17/09/2020",
+      "type": "Risks violated",
+      "count": 52
+    },
+    {
+      "date": "18/09/2020",
+      "type": "Financial impact",
+      "count": 200291
+    },
+    {
+      "date": "18/09/2020",
+      "type": "Risks violated",
+      "count": 11
+    },
+    {
+      "date": "19/09/2020",
+      "type": "Financial impact",
+      "count": 571
+    },
+    {
+      "date": "19/09/2020",
+      "type": "Risks violated",
+      "count": 6
+    },
+    {
+      "date": "20/09/2020",
+      "type": "Financial impact",
+      "count": 571
+    },
+    {
+      "date": "20/09/2020",
+      "type": "Risks violated",
+      "count": 6
+    },
+    {
+      "date": "23/09/2020",
+      "type": "Financial impact",
+      "count": 2307
+    },
+    {
+      "date": "23/09/2020",
+      "type": "Risks violated",
+      "count": 12
+    },
+    {
+      "date": "25/09/2020",
+      "type": "Financial impact",
+      "count": 5987
+    },
+    {
+      "date": "25/09/2020",
+      "type": "Risks violated",
+      "count": 64
+    },
+    {
+      "date": "26/09/2020",
+      "type": "Financial impact",
+      "count": 224
+    },
+    {
+      "date": "26/09/2020",
+      "type": "Risks violated",
+      "count": 3
+    },
+    {
+      "date": "27/09/2020",
+      "type": "Financial impact",
+      "count": 21213
+    },
+    {
+      "date": "27/09/2020",
+      "type": "Risks violated",
+      "count": 16
+    },
+    {
+      "date": "30/09/2020",
+      "type": "Financial impact",
+      "count": 16989
+    },
+    {
+      "date": "30/09/2020",
+      "type": "Risks violated",
+      "count": 95
+    },
+    {
+      "date": "02/10/2020",
+      "type": "Financial impact",
+      "count": 0
+    },
+    {
+      "date": "02/10/2020",
+      "type": "Risks violated",
+      "count": 3
+    },
+    {
+      "date": "18/10/2020",
+      "type": "Financial impact",
+      "count": 681
+    },
+    {
+      "date": "18/10/2020",
+      "type": "Risks violated",
+      "count": 6
+    },
+    {
+      "date": "22/10/2020",
+      "type": "Financial impact",
+      "count": 255338
+    },
+    {
+      "date": "22/10/2020",
+      "type": "Risks violated",
+      "count": 80
+    },
+    {
+      "date": "23/10/2020",
+      "type": "Financial impact",
+      "count": 58899
+    },
+    {
+      "date": "23/10/2020",
+      "type": "Risks violated",
+      "count": 3
+    },
+    {
+      "date": "24/10/2020",
+      "type": "Financial impact",
+      "count": 17621
+    },
+    {
+      "date": "24/10/2020",
+      "type": "Risks violated",
+      "count": 7
+    },
+    {
+      "date": "25/10/2020",
+      "type": "Financial impact",
+      "count": 412
+    },
+    {
+      "date": "25/10/2020",
+      "type": "Risks violated",
+      "count": 4
+    },
+    {
+      "date": "29/10/2020",
+      "type": "Financial impact",
+      "count": 896
+    },
+    {
+      "date": "29/10/2020",
+      "type": "Risks violated",
+      "count": 12
+    },
+    {
+      "date": "30/10/2020",
+      "type": "Financial impact",
+      "count": 0
+    },
+    {
+      "date": "30/10/2020",
+      "type": "Risks violated",
+      "count": 44
+    },
+    {
+      "date": "31/10/2020",
+      "type": "Financial impact",
+      "count": 1954
+    },
+    {
+      "date": "31/10/2020",
+      "type": "Risks violated",
+      "count": 10
+    },
+    {
+      "date": "02/11/2020",
+      "type": "Financial impact",
+      "count": 2687
+    },
+    {
+      "date": "02/11/2020",
+      "type": "Risks violated",
+      "count": 3
+    },
+    {
+      "date": "03/11/2020",
+      "type": "Financial impact",
+      "count": 0
+    },
+    {
+      "date": "03/11/2020",
+      "type": "Risks violated",
+      "count": 9
+    },
+    {
+      "date": "09/11/2020",
+      "type": "Financial impact",
+      "count": 0
+    },
+    {
+      "date": "09/11/2020",
+      "type": "Risks violated",
+      "count": 9
+    },
+    {
+      "date": "11/11/2020",
+      "type": "Financial impact",
+      "count": 24992
+    },
+    {
+      "date": "11/11/2020",
+      "type": "Risks violated",
+      "count": 11
+    },
+    {
+      "date": "12/11/2020",
+      "type": "Financial impact",
+      "count": 8701
+    },
+    {
+      "date": "12/11/2020",
+      "type": "Risks violated",
+      "count": 11
+    },
+    {
+      "date": "13/11/2020",
+      "type": "Financial impact",
+      "count": 1857611
+    },
+    {
+      "date": "13/11/2020",
+      "type": "Risks violated",
+      "count": 279
+    },
+    {
+      "date": "14/11/2020",
+      "type": "Financial impact",
+      "count": 299
+    },
+    {
+      "date": "14/11/2020",
+      "type": "Risks violated",
+      "count": 4
+    },
+    {
+      "date": "15/11/2020",
+      "type": "Financial impact",
+      "count": 134805
+    },
+    {
+      "date": "15/11/2020",
+      "type": "Risks violated",
+      "count": 40
+    },
+    {
+      "date": "20/11/2020",
+      "type": "Financial impact",
+      "count": 20383
+    },
+    {
+      "date": "20/11/2020",
+      "type": "Risks violated",
+      "count": 48
+    },
+    {
+      "date": "21/11/2020",
+      "type": "Financial impact",
+      "count": 134452
+    },
+    {
+      "date": "21/11/2020",
+      "type": "Risks violated",
+      "count": 53
+    },
+    {
+      "date": "22/11/2020",
+      "type": "Financial impact",
+      "count": 148632
+    },
+    {
+      "date": "22/11/2020",
+      "type": "Risks violated",
+      "count": 21
+    },
+    {
+      "date": "25/11/2020",
+      "type": "Financial impact",
+      "count": 2240
+    },
+    {
+      "date": "25/11/2020",
+      "type": "Risks violated",
+      "count": 3
+    },
+    {
+      "date": "29/11/2020",
+      "type": "Financial impact",
+      "count": 8385
+    },
+    {
+      "date": "29/11/2020",
+      "type": "Risks violated",
+      "count": 24
+    },
+    {
+      "date": "02/12/2020",
+      "type": "Financial impact",
+      "count": 7590
+    },
+    {
+      "date": "02/12/2020",
+      "type": "Risks violated",
+      "count": 12
+    },
+    {
+      "date": "09/12/2020",
+      "type": "Financial impact",
+      "count": 9388
+    },
+    {
+      "date": "09/12/2020",
+      "type": "Risks violated",
+      "count": 26
+    },
+    {
+      "date": "11/12/2020",
+      "type": "Financial impact",
+      "count": 0
+    },
+    {
+      "date": "11/12/2020",
+      "type": "Risks violated",
+      "count": 3
+    },
+    {
+      "date": "16/12/2020",
+      "type": "Financial impact",
+      "count": 240766
+    },
+    {
+      "date": "16/12/2020",
+      "type": "Risks violated",
+      "count": 14
+    },
+    {
+      "date": "17/12/2020",
+      "type": "Financial impact",
+      "count": 6433
+    },
+    {
+      "date": "17/12/2020",
+      "type": "Risks violated",
+      "count": 5
+    },
+    {
+      "date": "18/12/2020",
+      "type": "Financial impact",
+      "count": 154926
+    },
+    {
+      "date": "18/12/2020",
+      "type": "Risks violated",
+      "count": 17
+    },
+    {
+      "date": "24/12/2020",
+      "type": "Financial impact",
+      "count": 9136
+    },
+    {
+      "date": "24/12/2020",
+      "type": "Risks violated",
+      "count": 20
+    },
+    {
+      "date": "27/12/2020",
+      "type": "Financial impact",
+      "count": 97303
+    },
+    {
+      "date": "27/12/2020",
+      "type": "Risks violated",
+      "count": 32
+    },
+    {
+      "date": "30/12/2020",
+      "type": "Financial impact",
+      "count": 27476
+    },
+    {
+      "date": "30/12/2020",
+      "type": "Risks violated",
+      "count": 18
+    },
+    {
+      "date": "01/01/2021",
+      "type": "Financial impact",
+      "count": 63
+    },
+    {
+      "date": "01/01/2021",
+      "type": "Risks violated",
+      "count": 1
+    },
+    {
+      "date": "03/01/2021",
+      "type": "Financial impact",
+      "count": 26925
+    },
+    {
+      "date": "03/01/2021",
+      "type": "Risks violated",
+      "count": 8
+    },
+    {
+      "date": "10/01/2021",
+      "type": "Financial impact",
+      "count": 1833
+    },
+    {
+      "date": "10/01/2021",
+      "type": "Risks violated",
+      "count": 4
+    },
+    {
+      "date": "11/01/2021",
+      "type": "Financial impact",
+      "count": 175322
+    },
+    {
+      "date": "11/01/2021",
+      "type": "Risks violated",
+      "count": 10
+    },
+    {
+      "date": "17/01/2021",
+      "type": "Financial impact",
+      "count": 1420195
+    },
+    {
+      "date": "17/01/2021",
+      "type": "Risks violated",
+      "count": 25
+    },
+    {
+      "date": "21/01/2021",
+      "type": "Financial impact",
+      "count": 71952
+    },
+    {
+      "date": "21/01/2021",
+      "type": "Risks violated",
+      "count": 21
+    },
+    {
+      "date": "22/01/2021",
+      "type": "Financial impact",
+      "count": 1520026
+    },
+    {
+      "date": "22/01/2021",
+      "type": "Risks violated",
+      "count": 47
+    },
+    {
+      "date": "24/01/2021",
+      "type": "Financial impact",
+      "count": 153517
+    },
+    {
+      "date": "24/01/2021",
+      "type": "Risks violated",
+      "count": 42
+    },
+    {
+      "date": "30/01/2021",
+      "type": "Financial impact",
+      "count": 0
+    },
+    {
+      "date": "30/01/2021",
+      "type": "Risks violated",
+      "count": 58
+    },
+    {
+      "date": "31/01/2021",
+      "type": "Financial impact",
+      "count": 213470
+    },
+    {
+      "date": "31/01/2021",
+      "type": "Risks violated",
+      "count": 58
+    },
+    {
+      "date": "01/02/2021",
+      "type": "Financial impact",
+      "count": 60161
+    },
+    {
+      "date": "01/02/2021",
+      "type": "Risks violated",
+      "count": 23
+    },
+    {
+      "date": "03/02/2021",
+      "type": "Financial impact",
+      "count": 563543
+    },
+    {
+      "date": "03/02/2021",
+      "type": "Risks violated",
+      "count": 55
+    },
+    {
+      "date": "10/02/2021",
+      "type": "Financial impact",
+      "count": 86686
+    },
+    {
+      "date": "10/02/2021",
+      "type": "Risks violated",
+      "count": 18
+    },
+    {
+      "date": "12/02/2021",
+      "type": "Financial impact",
+      "count": 11009
+    },
+    {
+      "date": "12/02/2021",
+      "type": "Risks violated",
+      "count": 18
+    },
+    {
+      "date": "23/02/2021",
+      "type": "Financial impact",
+      "count": 5095
+    },
+    {
+      "date": "23/02/2021",
+      "type": "Risks violated",
+      "count": 3
+    },
+    {
+      "date": "24/02/2021",
+      "type": "Financial impact",
+      "count": 0
+    },
+    {
+      "date": "24/02/2021",
+      "type": "Risks violated",
+      "count": 3
+    },
+    {
+      "date": "25/02/2021",
+      "type": "Financial impact",
+      "count": 1577616
+    },
+    {
+      "date": "25/02/2021",
+      "type": "Risks violated",
+      "count": 276
+    },
+    {
+      "date": "28/02/2021",
+      "type": "Financial impact",
+      "count": 216315
+    },
+    {
+      "date": "28/02/2021",
+      "type": "Risks violated",
+      "count": 35
+    },
+    {
+      "date": "01/03/2021",
+      "type": "Financial impact",
+      "count": 0
+    },
+    {
+      "date": "01/03/2021",
+      "type": "Risks violated",
+      "count": 6
+    },
+    {
+      "date": "02/03/2021",
+      "type": "Financial impact",
+      "count": 255048
+    },
+    {
+      "date": "02/03/2021",
+      "type": "Risks violated",
+      "count": 16
+    },
+    {
+      "date": "03/03/2021",
+      "type": "Financial impact",
+      "count": 717
+    },
+    {
+      "date": "03/03/2021",
+      "type": "Risks violated",
+      "count": 3
+    },
+    {
+      "date": "09/03/2021",
+      "type": "Financial impact",
+      "count": 0
+    },
+    {
+      "date": "09/03/2021",
+      "type": "Risks violated",
+      "count": 7
+    },
+    {
+      "date": "10/03/2021",
+      "type": "Financial impact",
+      "count": 0
+    },
+    {
+      "date": "10/03/2021",
+      "type": "Risks violated",
+      "count": 3
+    },
+    {
+      "date": "12/03/2021",
+      "type": "Financial impact",
+      "count": 520
+    },
+    {
+      "date": "12/03/2021",
+      "type": "Risks violated",
+      "count": 2
+    },
+    {
+      "date": "20/03/2021",
+      "type": "Financial impact",
+      "count": 178901
+    },
+    {
+      "date": "20/03/2021",
+      "type": "Risks violated",
+      "count": 9
+    },
+    {
+      "date": "23/03/2021",
+      "type": "Financial impact",
+      "count": 12598
+    },
+    {
+      "date": "23/03/2021",
+      "type": "Risks violated",
+      "count": 3
+    },
+    {
+      "date": "24/03/2021",
+      "type": "Financial impact",
+      "count": 171272
+    },
+    {
+      "date": "24/03/2021",
+      "type": "Risks violated",
+      "count": 46
+    },
+    {
+      "date": "25/03/2021",
+      "type": "Financial impact",
+      "count": 7496
+    },
+    {
+      "date": "25/03/2021",
+      "type": "Risks violated",
+      "count": 4
+    },
+    {
+      "date": "26/03/2021",
+      "type": "Financial impact",
+      "count": 24427
+    },
+    {
+      "date": "26/03/2021",
+      "type": "Risks violated",
+      "count": 7
+    },
+    {
+      "date": "27/03/2021",
+      "type": "Financial impact",
+      "count": 13
+    },
+    {
+      "date": "27/03/2021",
+      "type": "Risks violated",
+      "count": 3
+    },
+    {
+      "date": "31/03/2021",
+      "type": "Financial impact",
+      "count": 3777
+    },
+    {
+      "date": "31/03/2021",
+      "type": "Risks violated",
+      "count": 90
+    },
+    {
+      "date": "02/04/2021",
+      "type": "Financial impact",
+      "count": 24542
+    },
+    {
+      "date": "02/04/2021",
+      "type": "Risks violated",
+      "count": 9
+    },
+    {
+      "date": "11/04/2021",
+      "type": "Financial impact",
+      "count": 7161
+    },
+    {
+      "date": "11/04/2021",
+      "type": "Risks violated",
+      "count": 14
+    },
+    {
+      "date": "01/06/2021",
+      "type": "Financial impact",
+      "count": 0
+    },
+    {
+      "date": "01/06/2021",
+      "type": "Risks violated",
+      "count": 6
+    },
+    {
+      "date": "02/06/2021",
+      "type": "Financial impact",
+      "count": 39
+    },
+    {
+      "date": "02/06/2021",
+      "type": "Risks violated",
+      "count": 4
+    },
+    {
+      "date": "10/07/2021",
+      "type": "Financial impact",
+      "count": 2180
+    },
+    {
+      "date": "10/07/2021",
+      "type": "Risks violated",
+      "count": 7
+    },
+    {
+      "date": "22/07/2021",
+      "type": "Financial impact",
+      "count": 3768
+    },
+    {
+      "date": "22/07/2021",
+      "type": "Risks violated",
+      "count": 7
+    }
+  ],
+  [
+    {
+      "date": "10/09/2020",
+      "type": "Risk score",
+      "value": 2
+    },
+    {
+      "date": "17/09/2020",
+      "type": "Risk score",
+      "value": 4
+    },
+    {
+      "date": "18/09/2020",
+      "type": "Risk score",
+      "value": 7
+    },
+    {
+      "date": "19/09/2020",
+      "type": "Risk score",
+      "value": 13
+    },
+    {
+      "date": "20/09/2020",
+      "type": "Risk score",
+      "value": 10
+    },
+    {
+      "date": "23/09/2020",
+      "type": "Risk score",
+      "value": 13
+    },
+    {
+      "date": "25/09/2020",
+      "type": "Risk score",
+      "value": 5
+    },
+    {
+      "date": "26/09/2020",
+      "type": "Risk score",
+      "value": 11
+    },
+    {
+      "date": "27/09/2020",
+      "type": "Risk score",
+      "value": 15
+    },
+    {
+      "date": "30/09/2020",
+      "type": "Risk score",
+      "value": 3
+    },
+    {
+      "date": "02/10/2020",
+      "type": "Risk score",
+      "value": 15
+    },
+    {
+      "date": "18/10/2020",
+      "type": "Risk score",
+      "value": 4
+    },
+    {
+      "date": "22/10/2020",
+      "type": "Risk score",
+      "value": 13
+    },
+    {
+      "date": "23/10/2020",
+      "type": "Risk score",
+      "value": 3
+    },
+    {
+      "date": "24/10/2020",
+      "type": "Risk score",
+      "value": 2
+    },
+    {
+      "date": "25/10/2020",
+      "type": "Risk score",
+      "value": 13
+    },
+    {
+      "date": "29/10/2020",
+      "type": "Risk score",
+      "value": 3
+    },
+    {
+      "date": "30/10/2020",
+      "type": "Risk score",
+      "value": 4
+    },
+    {
+      "date": "31/10/2020",
+      "type": "Risk score",
+      "value": 8
+    },
+    {
+      "date": "02/11/2020",
+      "type": "Risk score",
+      "value": 12
+    },
+    {
+      "date": "03/11/2020",
+      "type": "Risk score",
+      "value": 4
+    },
+    {
+      "date": "09/11/2020",
+      "type": "Risk score",
+      "value": 4
+    },
+    {
+      "date": "11/11/2020",
+      "type": "Risk score",
+      "value": 15
+    },
+    {
+      "date": "12/11/2020",
+      "type": "Risk score",
+      "value": 3
+    },
+    {
+      "date": "13/11/2020",
+      "type": "Risk score",
+      "value": 24
+    },
+    {
+      "date": "14/11/2020",
+      "type": "Risk score",
+      "value": 8
+    },
+    {
+      "date": "15/11/2020",
+      "type": "Risk score",
+      "value": 15
+    },
+    {
+      "date": "20/11/2020",
+      "type": "Risk score",
+      "value": 11
+    },
+    {
+      "date": "21/11/2020",
+      "type": "Risk score",
+      "value": 14
+    },
+    {
+      "date": "22/11/2020",
+      "type": "Risk score",
+      "value": 7
+    },
+    {
+      "date": "25/11/2020",
+      "type": "Risk score",
+      "value": 9
+    },
+    {
+      "date": "29/11/2020",
+      "type": "Risk score",
+      "value": 10
+    },
+    {
+      "date": "02/12/2020",
+      "type": "Risk score",
+      "value": 10
+    },
+    {
+      "date": "09/12/2020",
+      "type": "Risk score",
+      "value": 5
+    },
+    {
+      "date": "11/12/2020",
+      "type": "Risk score",
+      "value": 9
+    },
+    {
+      "date": "16/12/2020",
+      "type": "Risk score",
+      "value": 12
+    },
+    {
+      "date": "17/12/2020",
+      "type": "Risk score",
+      "value": 14
+    },
+    {
+      "date": "18/12/2020",
+      "type": "Risk score",
+      "value": 13
+    },
+    {
+      "date": "24/12/2020",
+      "type": "Risk score",
+      "value": 3
+    },
+    {
+      "date": "27/12/2020",
+      "type": "Risk score",
+      "value": 6
+    },
+    {
+      "date": "30/12/2020",
+      "type": "Risk score",
+      "value": 14
+    },
+    {
+      "date": "01/01/2021",
+      "type": "Risk score",
+      "value": 6
+    },
+    {
+      "date": "03/01/2021",
+      "type": "Risk score",
+      "value": 12
+    },
+    {
+      "date": "10/01/2021",
+      "type": "Risk score",
+      "value": 7
+    },
+    {
+      "date": "11/01/2021",
+      "type": "Risk score",
+      "value": 7
+    },
+    {
+      "date": "17/01/2021",
+      "type": "Risk score",
+      "value": 8
+    },
+    {
+      "date": "21/01/2021",
+      "type": "Risk score",
+      "value": 14
+    },
+    {
+      "date": "22/01/2021",
+      "type": "Risk score",
+      "value": 10
+    },
+    {
+      "date": "24/01/2021",
+      "type": "Risk score",
+      "value": 9
+    },
+    {
+      "date": "30/01/2021",
+      "type": "Risk score",
+      "value": 6
+    },
+    {
+      "date": "31/01/2021",
+      "type": "Risk score",
+      "value": 8
+    },
+    {
+      "date": "01/02/2021",
+      "type": "Risk score",
+      "value": 11
+    },
+    {
+      "date": "03/02/2021",
+      "type": "Risk score",
+      "value": 3
+    },
+    {
+      "date": "10/02/2021",
+      "type": "Risk score",
+      "value": 9
+    },
+    {
+      "date": "12/02/2021",
+      "type": "Risk score",
+      "value": 14
+    },
+    {
+      "date": "23/02/2021",
+      "type": "Risk score",
+      "value": 12
+    },
+    {
+      "date": "24/02/2021",
+      "type": "Risk score",
+      "value": 3
+    },
+    {
+      "date": "25/02/2021",
+      "type": "Risk score",
+      "value": 10
+    },
+    {
+      "date": "28/02/2021",
+      "type": "Risk score",
+      "value": 15
+    },
+    {
+      "date": "01/03/2021",
+      "type": "Risk score",
+      "value": 13
+    },
+    {
+      "date": "02/03/2021",
+      "type": "Risk score",
+      "value": 8
+    },
+    {
+      "date": "03/03/2021",
+      "type": "Risk score",
+      "value": 14
+    },
+    {
+      "date": "09/03/2021",
+      "type": "Risk score",
+      "value": 13
+    },
+    {
+      "date": "10/03/2021",
+      "type": "Risk score",
+      "value": 8
+    },
+    {
+      "date": "12/03/2021",
+      "type": "Risk score",
+      "value": 4
+    },
+    {
+      "date": "20/03/2021",
+      "type": "Risk score",
+      "value": 2
+    },
+    {
+      "date": "23/03/2021",
+      "type": "Risk score",
+      "value": 12
+    },
+    {
+      "date": "24/03/2021",
+      "type": "Risk score",
+      "value": 13
+    },
+    {
+      "date": "25/03/2021",
+      "type": "Risk score",
+      "value": 12
+    },
+    {
+      "date": "26/03/2021",
+      "type": "Risk score",
+      "value": 12
+    },
+    {
+      "date": "27/03/2021",
+      "type": "Risk score",
+      "value": 6
+    },
+    {
+      "date": "31/03/2021",
+      "type": "Risk score",
+      "value": 13
+    },
+    {
+      "date": "02/04/2021",
+      "type": "Risk score",
+      "value": 5
+    },
+    {
+      "date": "11/04/2021",
+      "type": "Risk score",
+      "value": 20
+    },
+    {
+      "date": "01/06/2021",
+      "type": "Risk score",
+      "value": 3
+    },
+    {
+      "date": "02/06/2021",
+      "type": "Risk score",
+      "value": 16
+    },
+    {
+      "date": "10/07/2021",
+      "type": "Risk score",
+      "value": 20
+    },
+    {
+      "date": "22/07/2021",
+      "type": "Risk score",
+      "value": 24
+    }
+  ]
+]

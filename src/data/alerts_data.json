@@ -1,0 +1,14 @@
+[
+  {
+    "type": "Access security alerts",
+    "value": 42
+  },
+  {
+    "type": "Data risk alerts",
+    "value": 25
+  },
+  {
+    "type": "Security risk alerts",
+    "value": 346
+  }
+]
