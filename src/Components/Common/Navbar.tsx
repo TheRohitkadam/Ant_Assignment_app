@@ -63,13 +63,12 @@ const Navbar = (props: NavProps) => {
       }}
     >
       <Row>
-        <Col span={19} style={{ transition: "300ms" }}>
+        <Col flex="auto" style={{ transition: "300ms" }}>
           <Space>{props.children}</Space>
         </Col>
         <Col
-          span={5}
+          flex="220px"
           style={{
-            paddingLeft: collapsed ? 41 : 0,
             transition: "150ms",
           }}
         >

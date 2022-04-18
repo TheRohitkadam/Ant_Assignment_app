@@ -41,7 +41,7 @@ const FormModal = (props: FormModalType) => {
   const children: any[] = [];
   applicationOptions.forEach((application: any, i: number) => {
     children.push(
-      <Option key={application.toString()}>{application.toString()}</Option>
+      <Select.Option key={application.toString()}>{application.toString()}</Select.Option>
     );
   });
 

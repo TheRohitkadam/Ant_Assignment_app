@@ -1,30 +1,18 @@
-import React, { ChangeEvent, useState } from "react";
+import { useState } from "react";
 import {
-  Col,
-  Input,
-  Row,
   Typography,
   Select,
   Mentions,
   Space,
   Button,
 } from "antd";
-import { SearchOutlined } from "@ant-design/icons";
 import getArrObjElementValues from "../../utils/getArrObjElementValues";
 import data from "../../data/users.json";
 
 const { Text } = Typography;
 const { Option } = Mentions;
 
-type Props = {
-  // placeholder: string;
-  // onChange: (e: ChangeEvent<HTMLInputElement>) => void;
-  // onPressEnter?: () => void;
-  // value: string;
-  // ref?: () => void;
-};
-
-const FilterHeader = (props: Props) => {
+const FilterHeader = () => {
   const [status, setStatus] = useState<boolean[]>([]);
   const [manager, setManager] = useState<string[]>([]);
   const [location, setLocation] = useState<string[]>([]);
@@ -73,9 +61,9 @@ const FilterHeader = (props: Props) => {
         style={{ minWidth: 140, minHeight: 32 }}
         >
         {ManagerOptions.map((item: any, i) => (
-          <Option key={i.toString()} value={item}>
+          <Select.Option key={i.toString()} value={item}>
             {item}
-          </Option>
+          </Select.Option>
         ))}
       </Select>
       <Select
@@ -88,7 +76,7 @@ const FilterHeader = (props: Props) => {
         maxTagCount={1}
         >
         {LocationOptions.map((item: any, i) => (
-          <Option value={item}>{item}</Option>
+          <Select.Option value={item}>{item}</Select.Option>
           ))}
       </Select>
       <Select
@@ -101,9 +89,9 @@ const FilterHeader = (props: Props) => {
         maxTagCount={1}
       >
         {JobTitleOptions.map((item: any, i) => (
-          <Option key={i.toString()} value={item}>
+          <Select.Option key={i.toString()} value={item}>
             {item}
-          </Option>
+          </Select.Option>
         ))}
       </Select>
       <Button

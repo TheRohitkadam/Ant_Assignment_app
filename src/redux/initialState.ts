@@ -7,10 +7,16 @@ export const initialState: {
     usersCount: number;
     tableLoading: boolean;
     selectedRowKeys: any[];
+    renderCount: number;
+    current: number;
+    pageSize: number;
 } = {
     users: usersjson,
     limitedUsers: [],
     usersCount: 0,
     tableLoading: false,
     selectedRowKeys: [],
+    renderCount: 0,
+    current: 1,
+    pageSize: 10
 }

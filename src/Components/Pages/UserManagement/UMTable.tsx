@@ -19,6 +19,7 @@ import AntTable from "../../Common/AntTable";
 import {
   removeUser,
   setLimitedData,
+  setPagiation,
   setSelectRowKeys,
 } from "../../../redux/actions/actions";
 import nameSeparator from "../../../utils/nameSeparator";
@@ -44,19 +45,11 @@ const UMTable: FC<Props> = ({
 }) => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  const tableData = useSelector((state: any) => state.tableReducer);
-
-  // dispatch(setLimitedData({ current: 1, pageSize: 10 }));
+  const store = useSelector((state: any) => state.tableReducer);
 
   useEffect(() => {
-    console.log("triggered");
-    if (false) {
-      onTableChange({ current: 1, pageSize: 10 });
-    }
-    // }, []);
-    // }, [modalState]);
-    // }, [tableData.users]);
-  }, [tableData.limitedUsers]);
+    onTableChange({ current: store.current, pageSize: store.pageSize });
+  }, [store.renderCount]);
 
   const showPropsConfirm = (record: any) =>
     confirm({
@@ -71,7 +64,7 @@ const UMTable: FC<Props> = ({
       onOk() {
         dispatch(removeUser(record.guid));
       },
-      onCancel() {},
+      onCancel() { },
     });
 
   const onSelectChange = (selectedRowKeys: any) => {
@@ -227,28 +220,29 @@ const UMTable: FC<Props> = ({
   ];
 
   const rowSelection = {
-    selectedRowKeys: tableData.selectedRowKeys,
+    selectedRowKeys: store.selectedRowKeys,
     onChange: onSelectChange,
-    onSelect: (record: any, selected: any) => {},
+    onSelect: (record: any, selected: any) => { },
   };
 
   const onTableChange = (pagination: any) => {
     dispatch(setLimitedData(pagination));
+    dispatch(setPagiation(pagination))
   };
 
   return (
     <AntTable
       onChange={onTableChange}
       size="small"
-      loading={tableData.tableLoading}
+      loading={store.tableLoading}
       columns={columns}
-      dataSource={tableData.limitedUsers}
+      dataSource={store.limitedUsers}
       rowKey={(record) => record.guid}
       rowSelection={rowSelection}
       scroll={{ x: 1500 }}
       pagination={{
         showSizeChanger: true,
-        total: tableData.usersCount,
+        total: store.usersCount,
       }}
     />
   );

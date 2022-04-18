@@ -1,7 +1,7 @@
 import { uuidv4 } from "@antv/xflow-core";
 import { User } from "../../types/userType";
 import nameConcat from "../../utils/nameConcat";
-import { ADD_USER, REMOVE_MULTIPLE_USERS, REMOVE_USER, SELECT_ROW_KEYS, SET_LIMITED_DATA, SET_LOADING, SET_USERS_COUNT, UPDATE_USER } from "../actions/actions";
+import { ADD_USER, REMOVE_MULTIPLE_USERS, REMOVE_USER, SELECT_ROW_KEYS, SET_LIMITED_DATA, SET_LOADING, SET_PAGINATION, SET_USERS_COUNT, UPDATE_USER } from "../actions/actions";
 import { initialState } from "../initialState";
 
 type Action = {
@@ -12,12 +12,6 @@ type Action = {
 function tableReducer(state = initialState, action: Action) {
     console.log("payload", action.payload)
     switch (action.type) {
-        // case EDIT_FORM: {
-        //     return {
-        //         ...state,
-        //         formState: action.payload
-        //     }
-        // }
         case ADD_USER: {
             const [name, val] = nameConcat(action.payload);
             const user = {
@@ -32,33 +26,20 @@ function tableReducer(state = initialState, action: Action) {
             };
             return {
                 ...state,
-                // users: [...state.users, user],
                 users: [...state.users, user],
                 limitedUsers: [...state.limitedUsers, user],
-                // limitedUsers: [...state.limitedUsers, user],
+                renderCount: state.renderCount + 1
             }
         }
         case REMOVE_USER: {
             return {
                 ...state,
                 users: state.users.filter(user => !action.payload.includes(user.guid)),
-                limitedUsers: state.limitedUsers.filter(user => !action.payload.includes(user.guid))
+                limitedUsers: state.limitedUsers.filter(user => !action.payload.includes(user.guid)),
+                renderCount: state.renderCount + 1
             }
         }
         case UPDATE_USER: {
-            console.log("values", action.payload)
-            // const [name, val] = nameConcat(action.payload);
-
-            // const user = {
-            //     ...val,
-            //     name,
-            //     _id: state.formState._id,
-            //     index: state.formState.index,
-            //     guid: state.formState.guid,
-            //     isActive: state.formState.isActive,
-            //     picture: state.formState.picture,
-            // };
-
             const idx = state.users.findIndex((userinfo) => userinfo.guid === action.payload.guid);
             const limitedUserId = state.limitedUsers.findIndex((userinfo) => userinfo.guid === action.payload.guid);
             const data = state.users;
@@ -68,7 +49,8 @@ function tableReducer(state = initialState, action: Action) {
             return {
                 ...state,
                 users: data,
-                limitedUsers: limitedData
+                limitedUsers: limitedData,
+                renderCount: state.renderCount + 1
             }
         }
         case REMOVE_MULTIPLE_USERS: {
@@ -79,7 +61,8 @@ function tableReducer(state = initialState, action: Action) {
                 }),
                 limitedUsers: state.limitedUsers.filter((user: User) => {
                     return !action.payload.includes(user.guid)
-                })
+                }),
+                renderCount: state.renderCount + 1
             }
         }
         case SET_LIMITED_DATA: {
@@ -110,13 +93,13 @@ function tableReducer(state = initialState, action: Action) {
                 selectedRowKeys: action.payload
             }
         }
-        // case SET_PAGINATION_INDEX: {
-        //     return {
-        //         ...state,
-        //         lastPaginationIndex: action.payload.current * action.payload.pageSize,
-        //         firstPaginationIndex: state.lastPaginationIndex - action.payload.pageSize,
-        //     }
-        // }
+        case SET_PAGINATION: {
+            return {
+                ...state,
+                current: action.payload.current,
+                pageSize: action.payload.pageSize,
+            }
+        }
         default:
             return state;
     }

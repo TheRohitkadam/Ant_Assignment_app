@@ -34,6 +34,7 @@ import CountryGraph, { usersByCountry } from "./Dashboard/CountryGraph";
 import getRandomColor from "../../utils/getRandomColor";
 import getArrObjElementValues from "../../utils/getArrObjElementValues";
 import UsersTable from "./Dashboard/UsersTable";
+import AxiosTable from "./Dashboard/AxiosTable";
 
 const { Content } = Layout;
 const { Title, Text } = Typography;
@@ -241,6 +242,9 @@ const Dashboard = () => {
           margin: `80px 20px 20px ${collapsed ? "100px" : "220px"}`,
         }}
       >
+        <Card style={{ borderRadius: 10, marginBottom: 20 }}>
+          <AxiosTable/>
+        </Card>
         <Card
           style={{
             backgroundColor: "#fff",
@@ -256,6 +260,8 @@ const Dashboard = () => {
             rowSelection={rowSelection}
             columns={columns}
             dataSource={infoData}
+            scroll={{ x: 1300 }}
+            size="small"
             rowKey={(record: { _id: any }) => record._id}
             expandable={{
               expandedRowRender,
@@ -280,7 +286,7 @@ const Dashboard = () => {
         <Card style={{ borderRadius: 10, marginBottom: 20 }}>
           <CountryGraph />
         </Card>
-        <Card style={{ borderRadius: 10 }}>
+        <Card style={{ borderRadius: 10, marginBottom: 20 }}>
           <Space size={10} wrap style={{ marginBottom: 20 }}>
             <StatCount
               title="Male"

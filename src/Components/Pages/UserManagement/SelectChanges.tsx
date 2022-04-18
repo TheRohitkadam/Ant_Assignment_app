@@ -286,7 +286,7 @@ const SelectChanges = (props: Props) => {
   const children: any = [];
   applicationOptions.forEach((application: any, i: number) => {
     children.push(
-      <Option key={application.toString()}>{application.toString()}</Option>
+      <Select.Option key={application.toString()}>{application.toString()}</Select.Option>
     );
   });
 
@@ -411,7 +411,7 @@ const SelectChanges = (props: Props) => {
               bordered={false}
               onChange={(value) => setIsActive(value)}
             >
-              <Option value={true}>
+              <Select.Option value={true}>
                 <Text
                   style={{
                     border: "none",
@@ -426,8 +426,8 @@ const SelectChanges = (props: Props) => {
                 >
                   Active
                 </Text>
-              </Option>
-              <Option value={false}>
+              </Select.Option>
+              <Select.Option value={false}>
                 <Text
                   style={{
                     border: "none",
@@ -442,7 +442,7 @@ const SelectChanges = (props: Props) => {
                 >
                   InActive
                 </Text>
-              </Option>
+              </Select.Option>
             </Select>
           </div>
         </Space>

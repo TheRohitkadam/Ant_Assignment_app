@@ -56,8 +56,6 @@ const SelectUser = (props: Props) => {
     usersdata,
     saveUser,
     setUsersdata,
-    // getSelectedUsers,
-    // setIsRowSelected,
   } = useContext(UserTableContext) as ContextType;
 
   const [selectedRowKeys, setSelectedRowKeys] = useState([]);
@@ -67,9 +65,6 @@ const SelectUser = (props: Props) => {
   const [modalform] = Form.useForm();
 
   const onSelectChange = (selectedRowKeys: any) => {
-    // selectedRowKeys.length === 0;
-    /*       ? setIsRowSelected(false)
-      : setIsRowSelected(true);*/
     setSelectedRowKeys(selectedRowKeys);
   };
 
@@ -270,6 +265,7 @@ const SelectUser = (props: Props) => {
       <FilterHeader />
       <AntTable
         size="small"
+        scroll={{ x: 1300 }}
         dataSource={filteredData}
         columns={columns}
         rowKey={(record) => record._id}

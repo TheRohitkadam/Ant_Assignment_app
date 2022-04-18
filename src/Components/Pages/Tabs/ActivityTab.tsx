@@ -30,13 +30,13 @@ const ActivityTab = () => {
                 size="middle"
                 dropdownStyle={{ width: 70 }}
               >
-                <Option value="username">
+                <Select.Option value="username">
                   <Text strong>Last 7 days</Text>
-                </Option>
-                <Option value="lucy">Lucy</Option>
-                <Option value="disabled" disabled>
+                </Select.Option>
+                <Select.Option value="lucy">Lucy</Select.Option>
+                <Select.Option value="disabled" disabled>
                   Disabled
-                </Option>
+                </Select.Option>
               </Select>
             </span>
             <MoreOutlined />

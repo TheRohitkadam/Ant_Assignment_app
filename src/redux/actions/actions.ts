@@ -8,6 +8,7 @@ export const SET_USERS_COUNT = "SET_USERS_COUNT";
 export const SET_LOADING = "SET_LOADING";
 export const UPDATE_USER = "UPDATE_USER";
 export const SELECT_ROW_KEYS = "SELECT_ROW_KEYS";
+export const SET_PAGINATION = "SET_PAGINATION"
 
 export const addUser = (userdata: User) => ({
     type: ADD_USER,
@@ -47,5 +48,10 @@ export const setLoading = (loading: boolean) => ({
 export const setSelectRowKeys = (selectedRowKeys: any[]) => ({
     type: SELECT_ROW_KEYS,
     payload: selectedRowKeys
+})
+
+export const setPagiation = (values: {current: number, pageSize: number}) => ({
+    type: SET_PAGINATION,
+    payload: values
 })
 

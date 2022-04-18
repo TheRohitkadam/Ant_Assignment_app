@@ -226,20 +226,19 @@ const Inbox = () => {
                 </div>
                 {inboxData.map((item: any, index) => {
                   return (
-                    <div style={{ paddingRight: 20, marginLeft: 20 }}>
-                      <MessageCard
-                        key={item.id}
-                        className={`${
-                          id === index ? "msg-card-selected" : "msg-card"
-                        }`}
-                        messageCardVisible={detailView}
-                        clickHandler={() => {
-                          setId(index);
-                          toggleDetailView(item);
-                        }}
-                        data={item}
-                      />
-                    </div>
+                    <MessageCard
+                      style={{ paddingRight: 20, marginLeft: 20 }}
+                      key={item.id}
+                      className={`${
+                        id === index ? "msg-card-selected" : "msg-card"
+                      }`}
+                      messageCardVisible={detailView}
+                      clickHandler={() => {
+                        setId(index);
+                        toggleDetailView(item);
+                      }}
+                      data={item}
+                    />
                   );
                 })}
               </div>
