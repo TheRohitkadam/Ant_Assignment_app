@@ -35,6 +35,7 @@ import getRandomColor from "../../utils/getRandomColor";
 import getArrObjElementValues from "../../utils/getArrObjElementValues";
 import UsersTable from "./Dashboard/UsersTable";
 import AxiosTable from "./Dashboard/AxiosTable";
+import StackChart from "./Dashboard/StackChart";
 
 const { Content } = Layout;
 const { Title, Text } = Typography;
@@ -242,6 +243,9 @@ const Dashboard = () => {
           margin: `80px 20px 20px ${collapsed ? "100px" : "220px"}`,
         }}
       >
+        <Card style={{ borderRadius: 10, marginBottom: 20 }}>
+          <StackChart/>
+        </Card>
         <Card style={{ borderRadius: 10, marginBottom: 20 }}>
           <AxiosTable/>
         </Card>

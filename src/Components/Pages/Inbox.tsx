@@ -219,17 +219,19 @@ const Inbox = () => {
                   pane1Style={{
                     overflow: "auto",
                     minWidth: `${!detailView ? "100%" : "30%"}`,
-                    paddingInline: 20,
+                    paddingLeft: 20,
+                    paddingRight: 20,
                   }}
                   pane2Style={{
                     paddingTop: 20,
-                    paddingInline: 20,
+                    paddingLeft: 20,
+                    paddingRight: 20,
                   }}
                 >
                   <>
-                    <Title level={5}>
+                    <Text style={{marginBlock: 20}}>
                       Showing {inboxData.length} of {messageData.length} results
-                    </Title>
+                    </Text>
                     {inboxData.map((item: any, index) => (
                       <MessageCard
                         style={{ marginInline: 20, padding: 14 }}

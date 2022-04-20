@@ -39,7 +39,7 @@ import { ContextType } from "../../../types/userType";
 import { ColType } from "../Dashboard";
 import { Column } from "@ant-design/charts";
 import arrToObj from "../../../utils/arrToObj";
-import EditAccess from "./EditAccessModal";
+import EditAccess from "./EditAccess";
 import nameSeparator from "../../../utils/nameSeparator";
 import nameConcat from "../../../utils/nameConcat";
 import getArrObjElementValues from "../../../utils/getArrObjElementValues";
@@ -91,37 +91,6 @@ const SelectChanges = (props: Props) => {
   function isEmpty(str: string) {
     return !str.trim().length;
   }
-
-  // const addUser = (values: any) => {
-  //   const [name, val] = nameConcat(values);
-  //   const userObj = {
-  //     ...val,
-  //     name,
-  //     _id: (Math.random() + 1).toString(36).substring(3),
-  //     index: usersdata.length + 1,
-  //     guid: generateQuickGuid(),
-  //     isActive: false,
-  //     picture: "",
-  //   };
-  //   console.log("userObj", userObj);
-  //   saveUser(userObj);
-
-  //   console.log("users", usersdata);
-  //   console.log("users length", usersdata.length);
-  // };
-
-  // const saveInfo = (values: any) => {
-  //   console.log("val firstname", values.firstname);
-  //   const [name, val] = nameConcat(values);
-  //   console.log("name", val);
-  //   console.log("user1", userFormData);
-  //   delete userFormData.firstname;
-  //   setUserFormData({
-  //     ...val,
-  //     name,
-  //   });
-  //   console.log("user2", userFormData);
-  // };
 
   const valConverter = (value: any) => {
     const val =
@@ -252,8 +221,8 @@ const SelectChanges = (props: Props) => {
             border: "none",
           }}
           onClick={() => {
-            console.log(" is active",props.selectedUser.record.isActive);
-            
+            console.log(" is active", props.selectedUser.record.isActive);
+
             setIsModalVisible(true);
             setUserFormData(userinfo);
           }}
@@ -264,19 +233,6 @@ const SelectChanges = (props: Props) => {
     },
   ];
 
-  // const getArrObjElementValues = (data: any, key: string, hasArr?: boolean) => {
-  //   const arr = data.map((item: any) => item[key]);
-  //   if (hasArr) {
-  //     const value = Array.from(new Set(arr.values()));
-  //     const commonArr: any = [...value];
-  //     const arrdata = new Set([].concat(...commonArr));
-  //     return Array.from(arrdata);
-  //   } else {
-  //     const value = new Set(arr.values());
-  //     return Array.from(value);
-  //   }
-  // };
-
   const managerOptions = getArrObjElementValues(data, "manager");
 
   const locationOptions = getArrObjElementValues(data, "location");
@@ -286,7 +242,9 @@ const SelectChanges = (props: Props) => {
   const children: any = [];
   applicationOptions.forEach((application: any, i: number) => {
     children.push(
-      <Select.Option key={application.toString()}>{application.toString()}</Select.Option>
+      <Select.Option key={application.toString()}>
+        {application.toString()}
+      </Select.Option>
     );
   });
 
@@ -317,6 +275,8 @@ const SelectChanges = (props: Props) => {
       <AntTable
         dataSource={[props.selectedUser.record]}
         columns={columns}
+        size="small"
+        scroll={{ x: 1200 }}
         rowKey={(record) => record._id}
         pagination={false}
         expandable={{
@@ -338,7 +298,8 @@ const SelectChanges = (props: Props) => {
             ),
         }}
       />
-      <Modal
+      <EditAccess isModalVisible={isModalVisible} record={props.selectedUser.record}/>
+      {/* <Modal
         visible={isModalVisible}
         onOk={() => {
           console.log("clicked");
@@ -446,7 +407,7 @@ const SelectChanges = (props: Props) => {
             </Select>
           </div>
         </Space>
-      </Modal>
+      </Modal> */}
     </>
   );
 };

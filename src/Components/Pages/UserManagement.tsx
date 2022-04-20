@@ -75,11 +75,11 @@ const UserManagement = () => {
           <Col span={4} style={{ paddingTop: 10 }}>
             <Title level={4}>Manage access</Title>
           </Col>
-          <Col span={13} style={{ paddingRight: 20 }}>
+          <Col span={10}>
             <Steps
               size="small"
               current={current}
-              style={{ marginTop: 10 }}
+              style={{ marginTop: 6 }}
               className="user-steps"
             >
               {stepsArray.map((item) => (
@@ -87,7 +87,7 @@ const UserManagement = () => {
               ))}
             </Steps>
           </Col>
-          <Col style={{ paddingLeft: 60, marginLeft: 20 }}>
+          <Col style={{ marginLeft: 20 }}>
             <Button
               type="text"
               style={{

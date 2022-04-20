@@ -9,25 +9,23 @@ const AxiosTable: FC = () => {
   const [data, setData] = useState<any[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
 
-  const getData = async (abortController: any) => {
+  const abortController = new AbortController();
+  const { signal } = abortController;
+
+  const getData = async () => {
     try {
       setLoading(true);
-      const response = await getDataByApi(abortController.signal);
+      const response = await getDataByApi(signal);
       setData(response.data);
       setLoading(false);
-    } catch (error) {
-      console.error(error);
+    } catch (error: any) {
+      console.log(JSON.stringify(error));
     }
   };
 
   useEffect(() => {
-    const abortController = new AbortController();
-
-    getData(abortController);
-
-    return () => {
-      abortController.abort();
-    };
+    getData();
+    return () => abortController.abort();
   }, []);
 
   const columns = [

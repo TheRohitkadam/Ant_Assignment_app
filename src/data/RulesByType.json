@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Analytic",
+    "type": "Type 1",
+    "value": 12.9,
+    "subtype": "Analytic-Active"
+  },
+  {
+    "name": "Analytic",
+    "type": "Type 1",
+    "value": 10.9,
+    "subtype": "Analytic-Inactive"
+  },
+  {
+    "name": "Analytic",
+    "type": "Type 1",
+    "value": 120.9,
+    "subtype": "Analytic-Draft"
+  },
+  {
+    "name": "Activity",
+    "type": "Type 1",
+    "value": 12.4,
+    "subtype": "Activity-Active"
+  },
+  {
+    "name": "Activity",
+    "type": "Type 1",
+    "value": 12.4,
+    "subtype": "Activity-Inactive"
+  },
+  {
+    "name": "Activity",
+    "type": "Type 1",
+    "value": 12.4,
+    "subtype": "Activity-Draft"
+  },
+  {
+    "name": "Analytic",
+    "type": "Type 2",
+    "value": 2.9,
+    "subtype": "Analytic-Active"
+  },
+  {
+    "name": "Analytic",
+    "type": "Type 2",
+    "value": 5.9,
+    "subtype": "Analytic-Inactive"
+  },
+  {
+    "name": "Analytic",
+    "type": "Type 2",
+    "value": 10.9,
+    "subtype": "Analytic-Draft"
+  },
+  {
+    "name": "Activity",
+    "type": "Type 2",
+    "value": 22.4,
+    "subtype": "Activity-Active"
+  },
+  {
+    "name": "Activity",
+    "type": "Type 2",
+    "value": 32.4,
+    "subtype": "Activity-Inactive"
+  },
+  {
+    "name": "Activity",
+    "type": "Type 2",
+    "value": 62.4,
+    "subtype": "Activity-Draft"
+  },
+  {
+    "name": "Analytic",
+    "type": "Type 3",
+    "value": 42.4,
+    "subtype": "Analytic-Active"
+  },
+  {
+    "name": "Analytic",
+    "type": "Type 3",
+    "value": 2.9,
+    "subtype": "Analytic-Inactive"
+  },
+  {
+    "name": "Analytic",
+    "type": "Type 3",
+    "value": 5.9,
+    "subtype": "Analytic-Draft"
+  },
+  {
+    "name": "Activity",
+    "type": "Type 3",
+    "value": 22.4,
+    "subtype": "Activity-Active"
+  },
+  {
+    "name": "Activity",
+    "type": "Type 3",
+    "value": 32.4,
+    "subtype": "Activity-Inactive"
+  },
+  {
+    "name": "Activity",
+    "type": "Type 3",
+    "value": 42.4,
+    "subtype": "Activity-Draft"
+  }
+]

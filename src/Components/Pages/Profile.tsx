@@ -44,17 +44,7 @@ const Profile = ({ isUserProfile }: { isUserProfile?: boolean }) => {
         }}
       >
         <Row style={{ padding: 0, marginBottom: 24 }}>
-          <Col span={2}>
-            {/* Passing image as a Avatar -> */}
-            {/* <Image
-              width={80}
-              style={{ borderRadius: "100%" }}
-              src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
-              // src={userData.picture}
-              preview={{
-                maskClassName: "customize-mask",
-              }}
-            /> */}
+          <Col flex="100px">
             <Avatar
               style={{
                 color: "#f56a00",
@@ -73,7 +63,7 @@ const Profile = ({ isUserProfile }: { isUserProfile?: boolean }) => {
                 : auth.userName.charAt(0).toUpperCase()}
             </Avatar>
           </Col>
-          <Col span={22} style={{ paddingLeft: 10, paddingTop: 10 }}>
+          <Col flex="auto" style={{ paddingLeft: 10, paddingTop: 10 }}>
             <Title style={{ fontSize: 24, marginTop: 12, marginBottom: 0 }}>
               {isUserProfile ? userData.name : auth.userName}
             </Title>
@@ -93,7 +83,7 @@ const Profile = ({ isUserProfile }: { isUserProfile?: boolean }) => {
             <AccessTab />
           </TabPane>
           <TabPane tab="Activity" key="4">
-            <ActivityTab/>
+            <ActivityTab />
           </TabPane>
         </Tabs>
       </Content>
