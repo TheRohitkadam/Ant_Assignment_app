@@ -9,7 +9,7 @@ import {
   Typography,
 } from "antd";
 import { Option } from "antd/lib/mentions";
-import React, { SetStateAction, useContext } from "react";
+import React, { Dispatch, SetStateAction, useContext } from "react";
 import { ContextType } from "../../../types/userType";
 import getArrObjElementValues from "../../../utils/getArrObjElementValues";
 import { UserTableContext } from "../../../utils/UserTableContext";
@@ -27,6 +27,7 @@ type EditAccessType = {
   dropdownOptionsData?: any;
   name?: string;
   record: any;
+  setIsModalVisible?: Dispatch<SetStateAction<boolean>>;
 };
 
 const { Text } = Typography;
@@ -68,7 +69,9 @@ const EditAccess = (props: EditAccessType) => {
       footer={null}
       style={{ top: 30 }}
       onOk={() => {}}
-      onCancel={() => {}}
+      onCancel={() => {
+        // props.setIsModalVisible(!props.isModalVisible);
+      }}
     >
       <Form
         initialValues={props.record}
@@ -150,7 +153,7 @@ const EditAccess = (props: EditAccessType) => {
           </Select>
         </Form.Item>
         <Form.Item htmlFor="submit">
-          <Button>Submit</Button>
+          <Button type="primary">Submit</Button>
         </Form.Item>
       </Form>
     </Modal>

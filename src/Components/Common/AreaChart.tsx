@@ -1,7 +1,6 @@
 import { Area, AreaConfig } from "@ant-design/charts";
-import { Col, Layout, Row, Typography } from "antd";
+import { Col, Row, Typography } from "antd";
 import moment from "moment";
-import React from "react";
 import areaChartData from "../../data/area_chart_data.json";
 
 const { Title, Text } = Typography;

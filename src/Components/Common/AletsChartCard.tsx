@@ -1,9 +1,7 @@
 import {
-    Layout,
     Typography,
     Row,
     Col,
-    Tabs,
     Card,
   } from "antd";
   import "../../styles/layout.less";
@@ -11,7 +9,7 @@ import {
     ArrowsAltOutlined,
     MoreOutlined,
   } from "@ant-design/icons";
-  import { CSSProperties, ReactNode, useState } from "react";
+  import { CSSProperties, ReactNode } from "react";
   import "../../styles/tabPane.less";
 
   const { Title, Text } = Typography;

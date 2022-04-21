@@ -1,8 +1,7 @@
-import React, { CSSProperties } from "react";
-import { SpinProps, Table, TablePaginationConfig, TableProps } from "antd";
-import "../../styles/table.less"
+import { CSSProperties } from "react";
+import { SpinProps, Table } from "antd";
 import { SizeType } from "antd/lib/config-provider/SizeContext";
-import { FilterValue, SorterResult } from "antd/lib/table/interface";
+import "../../styles/table.less";
 
 type Props = {
   columns: any[];
@@ -13,10 +12,12 @@ type Props = {
   bordered?: boolean;
   pagination?: boolean | any;
   size?: SizeType;
-  onChange?: ((pagination: any, filters: any, sorter: any, extra: any) => void) | undefined;
+  onChange?:
+    | ((pagination: any, filters: any, sorter: any, extra: any) => void)
+    | undefined;
   loading?: boolean | SpinProps;
   style?: CSSProperties;
-  scroll?:any  
+  scroll?: any;
 };
 
 const AntTable = (props: Props) => {
@@ -34,7 +35,7 @@ const AntTable = (props: Props) => {
       onChange={props.onChange}
       loading={props.loading}
       style={props.style}
-      scroll={props.scroll} 
+      scroll={props.scroll}
     />
   );
 };

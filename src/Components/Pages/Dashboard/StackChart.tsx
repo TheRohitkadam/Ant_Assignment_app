@@ -1,20 +1,12 @@
-import React, { FC } from "react";
-import { Badge, Button, Card, Col, Row, Typography } from "antd";
-import { Column, ColumnConfig, TooltipCfg } from "@ant-design/charts";
+import { FC } from "react";
+import { Button, Card, Typography } from "antd";
+import { Column, ColumnConfig } from "@ant-design/charts";
 import data from "../../../data/RulesByType.json";
-import AntBadge from "../../Common/AntBadge";
 import StatsTable from "./StatsTable";
-import { PatternAttr } from "@antv/g2plot";
 
 const { Title, Text } = Typography;
 
 const StackChart: FC = () => {
-  const pattern: PatternAttr = {
-    type: "square",
-    cfg: {
-      backgroundColor: "red",
-    },
-  };
   const config: ColumnConfig = {
     data,
     xField: "type",

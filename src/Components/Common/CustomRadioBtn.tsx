@@ -1,5 +1,4 @@
-import React from "react";
-import { Radio, RadioProps } from "antd";
+import { Radio } from "antd";
 import "../../styles/switch.less"
 
 type PropType = {

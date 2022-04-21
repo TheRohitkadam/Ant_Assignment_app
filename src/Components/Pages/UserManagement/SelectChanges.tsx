@@ -276,7 +276,7 @@ const SelectChanges = (props: Props) => {
         dataSource={[props.selectedUser.record]}
         columns={columns}
         size="small"
-        scroll={{ x: 1200 }}
+        scroll={{ x: 1300 }}
         rowKey={(record) => record._id}
         pagination={false}
         expandable={{
@@ -298,8 +298,12 @@ const SelectChanges = (props: Props) => {
             ),
         }}
       />
-      <EditAccess isModalVisible={isModalVisible} record={props.selectedUser.record}/>
-      {/* <Modal
+      {/* <EditAccess
+        isModalVisible={isModalVisible}
+        setIsModalVisible={setIsModalVisible}
+        record={props.selectedUser.record}
+      /> */}
+      <Modal
         visible={isModalVisible}
         onOk={() => {
           console.log("clicked");
@@ -407,7 +411,7 @@ const SelectChanges = (props: Props) => {
             </Select>
           </div>
         </Space>
-      </Modal> */}
+      </Modal>
     </>
   );
 };
