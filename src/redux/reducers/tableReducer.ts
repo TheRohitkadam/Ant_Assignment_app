@@ -10,7 +10,6 @@ type Action = {
 }
 
 function tableReducer(state = initialState, action: Action) {
-    console.log("payload", action.payload)
     switch (action.type) {
         case ADD_USER: {
             const [name, val] = nameConcat(action.payload);

@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Ant_Assignment_app/static/css/main.4fc369aa.css",
-    "main.js": "/Ant_Assignment_app/static/js/main.680923fd.js",
-    "static/js/787.efb33027.chunk.js": "/Ant_Assignment_app/static/js/787.efb33027.chunk.js",
-    "static/media/container_background.svg": "/Ant_Assignment_app/static/media/container_background.ebcb916068d431662f5b5c66e105a164.svg",
-    "static/media/antdesign.svg": "/Ant_Assignment_app/static/media/antdesign.9bc8753afce8642ac89ffd972d6c90cd.svg",
-    "index.html": "/Ant_Assignment_app/index.html",
-    "main.4fc369aa.css.map": "/Ant_Assignment_app/static/css/main.4fc369aa.css.map",
-    "main.680923fd.js.map": "/Ant_Assignment_app/static/js/main.680923fd.js.map",
-    "787.efb33027.chunk.js.map": "/Ant_Assignment_app/static/js/787.efb33027.chunk.js.map"
+    "main.css": "/static/css/main.ac55c5f0.css",
+    "main.js": "/static/js/main.6469d6e9.js",
+    "static/js/787.efb33027.chunk.js": "/static/js/787.efb33027.chunk.js",
+    "static/media/container_background.svg": "/static/media/container_background.ebcb916068d431662f5b5c66e105a164.svg",
+    "static/media/antdesign.svg": "/static/media/antdesign.9bc8753afce8642ac89ffd972d6c90cd.svg",
+    "index.html": "/index.html",
+    "main.ac55c5f0.css.map": "/static/css/main.ac55c5f0.css.map",
+    "main.6469d6e9.js.map": "/static/js/main.6469d6e9.js.map",
+    "787.efb33027.chunk.js.map": "/static/js/787.efb33027.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4fc369aa.css",
-    "static/js/main.680923fd.js"
+    "static/css/main.ac55c5f0.css",
+    "static/js/main.6469d6e9.js"
   ]
 }

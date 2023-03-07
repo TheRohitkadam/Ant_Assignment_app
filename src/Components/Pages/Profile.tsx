@@ -29,21 +29,28 @@ const Profile = ({ isUserProfile }: { isUserProfile?: boolean }) => {
 
   return (
     <>
-      <Navbar
-        title="Home Dashboard"
-        style={{ backgroundColor: "transparent", position: "relative" }}
-      >
+      <Navbar title="Home Dashboard" style={{ backgroundColor: "#f0f2f5" }}>
         <ArrowLeftOutlined onClick={() => navigate("/")} />
         <Text style={{ margin: "18px 0px" }}>Home</Text>
       </Navbar>
       <Content
         className="layout"
         style={{
-          padding: `0px 20px 20px ${collapsed ? "100px" : "220px"}`,
+          padding: `60px 20px 20px ${collapsed ? "100px" : "220px"}`,
           backgroundColor: "transparent",
         }}
       >
-        <Row style={{ padding: 0, marginBottom: 24 }}>
+        <Row
+          style={{
+            padding: 0,
+            marginBottom: 24,
+            position: "fixed",
+            zIndex: 100,
+            width: "100%",
+            display: "flex",
+            backgroundColor: "#f0f2f5"
+          }}
+        >
           <Col flex="100px">
             <Avatar
               style={{
@@ -72,17 +79,29 @@ const Profile = ({ isUserProfile }: { isUserProfile?: boolean }) => {
             </Text>
           </Col>
         </Row>
-        <Tabs defaultActiveKey="1">
-          <TabPane tab="Overview" key="1">
+        <Tabs
+          defaultActiveKey="1"
+          tabBarStyle={{
+            position: "fixed",
+            zIndex: 100,
+            backgroundColor: "#f0f2f5",
+            width: "100%",
+            display: "block",
+          }}
+          style={{
+            marginTop: 100,
+          }}
+        >
+          <TabPane style={{ marginTop: 70 }} tab="Overview" key="1">
             <OverviewTab userProfile={isUserProfile} />
           </TabPane>
-          <TabPane tab="Alerts" key="2">
+          <TabPane style={{ marginTop: 70 }} tab="Alerts" key="2">
             <AlertsTab />
           </TabPane>
-          <TabPane tab="Access" key="3">
+          <TabPane style={{ marginTop: 70 }} tab="Access" key="3">
             <AccessTab />
           </TabPane>
-          <TabPane tab="Activity" key="4">
+          <TabPane style={{ marginTop: 70 }} tab="Activity" key="4">
             <ActivityTab />
           </TabPane>
         </Tabs>

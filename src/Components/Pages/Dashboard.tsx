@@ -36,6 +36,7 @@ import getArrObjElementValues from "../../utils/getArrObjElementValues";
 import UsersTable from "./Dashboard/UsersTable";
 import AxiosTable from "./Dashboard/AxiosTable";
 import StackChart from "./Dashboard/StackChart";
+import BreakDownByType from "./Dashboard/BreakDownByType";
 
 const { Content } = Layout;
 const { Title, Text } = Typography;
@@ -244,10 +245,46 @@ const Dashboard = () => {
         }}
       >
         <Card style={{ borderRadius: 10, marginBottom: 20 }}>
-          <StackChart/>
+          <BreakDownByType />
         </Card>
         <Card style={{ borderRadius: 10, marginBottom: 20 }}>
-          <AxiosTable/>
+          <Space size={10} wrap style={{ marginBottom: 20 }}>
+            <StatCount
+              title="Male"
+              style={{ width: 133 }}
+              count={maleCount.length}
+              infoTooltip
+              color={getRandomColor()}
+            />
+            <StatCount
+              title="female"
+              style={{ width: 133 }}
+              count={femaleCount.length}
+              infoTooltip
+              color={getRandomColor()}
+            />
+            <Divider
+              type="vertical"
+              style={{ height: 60, verticalAlign: "top" }}
+            />
+            {usersByCountry.map((item, index) => (
+              <StatCount
+                key={index}
+                style={{ width: item.country === "United Kingdom" ? 148 : 130 }}
+                color={item.color}
+                title={item.country}
+                count={item.users}
+                infoTooltip
+              />
+            ))}
+          </Space>
+          <RandomUserTable />
+        </Card>
+        <Card style={{ borderRadius: 10, marginBottom: 20 }}>
+          <StackChart />
+        </Card>
+        <Card style={{ borderRadius: 10, marginBottom: 20 }}>
+          <AxiosTable />
         </Card>
         <Card
           style={{
@@ -289,39 +326,6 @@ const Dashboard = () => {
         </Card>
         <Card style={{ borderRadius: 10, marginBottom: 20 }}>
           <CountryGraph />
-        </Card>
-        <Card style={{ borderRadius: 10, marginBottom: 20 }}>
-          <Space size={10} wrap style={{ marginBottom: 20 }}>
-            <StatCount
-              title="Male"
-              style={{ width: 133 }}
-              count={maleCount.length}
-              infoTooltip
-              color={getRandomColor()}
-            />
-            <StatCount
-              title="female"
-              style={{ width: 133 }}
-              count={femaleCount.length}
-              infoTooltip
-              color={getRandomColor()}
-            />
-            <Divider
-              type="vertical"
-              style={{ height: 60, verticalAlign: "top" }}
-            />
-            {usersByCountry.map((item, index) => (
-              <StatCount
-                key={index}
-                style={{ width: item.country === "United Kingdom" ? 148 : 130 }}
-                color={item.color}
-                title={item.country}
-                count={item.users}
-                infoTooltip
-              />
-            ))}
-          </Space>
-          <RandomUserTable />
         </Card>
       </Content>
     </>
